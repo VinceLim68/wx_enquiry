@@ -1,0 +1,40 @@
+<!--pages/search/search.wxml-->
+
+
+<view wx:if="{{!hasUserInfo}}" class="userinfo">
+  <image class="userinfo-avatar" src="../image/timg.jpg" mode="cover"></image>
+  <view class="logo">
+    <view class="iconfont icon-coffee" style="font-size:24pt;color:#34B1AD;margin-right:10pt"></view>
+    <view class="title">大叔评估</view>
+  </view>
+  <view class="company">厦门诚德行自助询价系统</view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo1" class="loginbutton"> 登 录 </button>
+  <view class="footer">
+    <view>
+      <view class="blue">13600966656</view>
+      ©2018-2019
+    </view>
+    完整展示市场数据 精准了解市场风险</view>
+</view>
+
+
+<view wx:else class='whole'>
+  <view class="contain">
+
+    <form bindsubmit="goto" bindreset="formReset">
+      <view class="section">
+
+        <view class="iconfont icon-coffee myicon" ></view>
+        <input placeholder-class="h_class" name="comm" bindblur="commName" value="" placeholder="输入小区或者地址" focus="True" selection-start="1" selection-end="5" />
+        <!-- <view bindtap='goto'> -->
+        <button formType="submit" class="icon-button">
+          <view class="iconfont .icon-search myicon"></view>
+          <!-- <icon type="search" size="20" color="#3BA298" /> -->
+        </button>
+
+        <!-- </view> -->
+      </view>
+    </form>
+    <view class='textnote'>房地产估价师的价值衡量神器</view>
+  </view>
+</view>

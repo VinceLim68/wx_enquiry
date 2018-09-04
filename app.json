@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/out/out",
+    "pages/fee/fee"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34B1AD",
+    "navigationBarTitleText": "大叔自助询价系统",
+    "navigationBarTextStyle": "white"
+  }
+  
+}
